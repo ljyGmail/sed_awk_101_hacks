@@ -33,8 +33,8 @@
 
 ![awk workflow](images/awk_workflow.png)
 
-`awk 'BEGIN { FS=":"; print "---header---" } \
-/mail/ {print $1} \
+`awk 'BEGIN { FS=":"; print "---header---" } \  
+/mail/ {print $1} \  
 END { print "---footer---" }' /etc/passwd`
 
 Write a script file instead on command line
@@ -50,7 +50,8 @@ BEGIN {
 END {
     print "---footer---"
 }
-`
+`  
+
 Some random simple examples with various combinations of awk blocks.
 
 #### Only the body block:
