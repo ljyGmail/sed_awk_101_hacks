@@ -41,14 +41,14 @@ Write a script file instead on command line
 
 `
 BEGIN {
-    FS=":"
-    print "---header---"
-}
-/mail/ {
-    print $1
-}
-END {
-    print "---footer---"
+    FS=":"  
+    print "---header---"  
+}  
+/mail/ {  
+    print $1  
+}  
+END {  
+    print "---footer---"  
 }
 `  
 
