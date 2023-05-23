@@ -39,7 +39,7 @@ END { print "---footer---" }' /etc/passwd`
 
 Write a script file instead on command line
 
-`
+```
 BEGIN {
     FS=":"  
     print "---header---"  
@@ -50,7 +50,7 @@ BEGIN {
 END {  
     print "---footer---"  
 }
-`  
+```
 
 Some random simple examples with various combinations of awk blocks.
 
