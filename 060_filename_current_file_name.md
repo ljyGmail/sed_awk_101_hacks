@@ -15,5 +15,5 @@ Filename: -
 When piping the input to awk from another program, FILENAME will also be set to "-".  
 `echo "John Doe" | awk '{ print "Last name:", $2; print "Filename:", FILENAME }'`
 
-**Note: ** FILENAME inside the BEGIN block will return empty value "",  
+**Note:** FILENAME inside the BEGIN block will return empty value "",  
 as BEGIN is for the whole awk program, not for any specific file.
