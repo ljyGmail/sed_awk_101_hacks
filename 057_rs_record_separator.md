@@ -4,11 +4,11 @@ Assume you have the following text file which contains employee ids and names in
 `101,John Doe:102,Jason Smith:103,Raj Reddy:104,AnandRam:105,Jane Miller`
 
 The default record separator used by awk is new line, so the following will not work as expected.  
-`awk -F '{ print $2 }' employee-one-line.txt`  
+`awk -F ',' '{ print $2 }' employee-one-line.txt`  
 => *John Doe:102*
 
 Specify the record separator to colon to treat this as 5 different line.  
-`awk -F 'BEGIN { RS=":" } { print $2 }' employee-one-line.txt`
+`awk -F ',' 'BEGIN { RS=":" } { print $2 }' employee-one-line.txt`
 
 ---
 
