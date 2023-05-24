@@ -1,6 +1,6 @@
 # 68. Regular Expression Operators
 
-![regular expression operators](images/regular_expression_operators.png)
+![regular expression operators](images/regexp_operators.png)
 
 Print lines where field two is "Tennis":  
 `awk -F "," '$2 == "Tennis"' items.txt`
