@@ -1,7 +1,7 @@
 # 66. Assignment Operators
 
-![assignment operators](images/assignment_operators_1)
-![assignment operators](images/assignment_operators_2)
+![assignment operators](images/assignment_operators_1.png)
+![assignment operators](images/assignment_operators_2.png)
 
 The following example shows how to use assignment operations:
 ```
