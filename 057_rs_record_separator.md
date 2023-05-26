@@ -5,15 +5,16 @@ Assume you have the following text file which contains employee ids and names in
 
 The default record separator used by awk is new line, so the following will not work as expected.  
 `awk -F ',' '{ print $2 }' employee-one-line.txt`  
-=> *John Doe:102*
+=> _John Doe:102_
 
 Specify the record separator to colon to treat this as 5 different line.  
 `awk -F ',' 'BEGIN { RS=":" } { print $2 }' employee-one-line.txt`
 
 ---
 
-Assume you have the folloiwng text where records are separatord by a "-" on its own line.  
+Assume you have the following text where records are separated by a "-" on its own line.  
 And all fields are one a separate line.
+
 ```
 101
 John Doe
