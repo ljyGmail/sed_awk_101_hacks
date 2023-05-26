@@ -18,7 +18,7 @@ vim test-script.sed
 sed -n -f test-script.sed /etc/passwd
 ```
 
-# Base sed syntax for executing multiple sed commands using -e option:  
+## Base sed syntax for executing multiple sed commands using -e option:  
 `sed [options] -e {sed-command-1} -e {sed-command-2} {input-file}`
 
 The following script prints lines beginning with root and nobody from /etc/passwd.
